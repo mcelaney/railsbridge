@@ -1,0 +1,255 @@
+<!doctype html>  
+<html lang="en">
+  
+  <head>
+    <meta charset="utf-8">
+    
+    <title>RailsBridge Workshop</title>
+
+    <meta name="description" content="Slides and links to a full-day Ruby on Rails immersion workshop">
+
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+    
+    <link href='http://fonts.googleapis.com/css?family=Lato:400,700,400italic,700italic' rel='stylesheet' type='text/css'>
+    
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/print.css" type="text/css" media="print">
+
+    <link rel="stylesheet" href="lib/css/zenburn.css">
+  </head>
+  
+  <body>
+    
+    <div class="reveal">
+
+      <!-- Used to fade in a background when a specific slide state is reached -->
+      <div class="state-background"></div>
+
+      <!-- Any section element inside of this container is displayed as a slide -->
+      <div class="slides">
+        <section>
+          <h1>RailsBridge<h1>
+          <h2>Workshop for Women</h2>
+          <h3 class="inverted">Intro to Version Control and Git</h3>
+        </section>
+        
+        <section>
+          <section>
+            <h1>Hi I'm Mac!</h1>
+            
+            <div class ="fragment">
+              <img src="http://www.revzilla.com/images/revzilla/support/logo_10182016.svg" alt="Revzilla" width="100%" />
+              <p>I write code, eat brunch, and binge TV shows.</p>
+              <p>@mcelaney</p>
+            </div>
+          </section>
+        </section>
+        
+        <section>
+          <h1>What we will cover today</h1>
+          <ul>
+            <li class ="fragment">What is version control and why should we care?</li>
+            <li class ="fragment">Basics of git -- the essential commands</li>
+            <li class ="fragment">"Gitting" social with GitHub</li>
+          </ul>
+        </section>
+
+        <!-- Version Control -->
+        <section>
+          <section>
+            <h1>What is version control?</h1>
+            <h2>...and why should we care?</h2>
+            <p>"The management of changes to documents, computer programs, and other collections of information..."</p>
+            <p><i>https://en.wikipedia.org/wiki/Version_control</i></p><br />
+          </section>
+
+          <section>
+            <ul>
+              <li class ="fragment">why_cats_rule.doc</li>
+              <li class ="fragment">why_cats_rule2.doc</li>
+              <li class ="fragment">why_cats_rule_v3.doc</li>
+              <li class ="fragment">why_cats_rule_final.doc</li>
+              <li class ="fragment">why_cats_rule_final-changes.doc</li>
+              <li class ="fragment">why_cats_rule_final_final.doc</li>
+              <li class ="fragment">why_cats_rule_final_printed.doc</li>
+              <li class ="fragment">why_cats_rule_final_final_edits.doc</li>
+            </ul>
+          </section>
+
+          <section>
+            <h2>Save Versions!</h2>
+            <img src="img/history.png" width="737" height="450" />
+          </section>
+
+          <section>
+            <h2>Save Versions!</h2>
+            <img src="img/history2.png" width="737" height="450" />
+          </section>
+
+          <section>
+            <h2>Save Versions!</h2>
+            <img src="img/history3.png" width="737" height="450" />
+          </section>
+
+          <section>
+            <h2>See differences between versions!</h2>
+            <img src="img/differences.png" width="670" height="463" />
+          </section>
+
+          <section>
+            <h2>Collaborate with others!</h2>
+            <img src="img/collab.png" width="787" height="483" />
+          </section>
+        </section>
+
+        <section>
+          <section>
+            <h1>Git</h1>
+            <p>Distributed Source Control</p>
+          </section>
+
+          <section>
+            <h2>Staging Area</h2>
+            <img src="http://newtfire.org/dh/git_shell/gitWorkflow.jpg" />
+          </section>
+
+          <section>
+            <h2>Commit</h2>
+            <img src="https://hikaruzone.files.wordpress.com/2015/10/in-case-of-fire-1-git-commit-2-git-push-3-leave-building2.png?w=1200" width="600" />
+          </section>
+
+          <section>
+            <h2>Commit</h2>
+            <img src="img/history.png" width="737" height="450" />
+          </section>
+
+          <section>
+            <h2>Branches</h2>
+            <img src="http://nvie.com/img/main-branches@2x.png" width="300" />
+          </section>          
+
+          <section>
+            <h2>Repository</h2>
+            <img src="http://media.pragprog.com/titles/tsgit/images/repo-shared-simple.png" />
+          </section>
+        </section>
+
+        <section>
+          <section>
+            <h1>The commands</h1>
+          </section>          
+
+          <section>
+            <h2>git init</h2>
+            <p>Turns a folder in to a local git repository.</p>
+            <img src="img/git_init.png" width="700" />
+          </section>
+
+          <section>
+            <h2>git status</h2>
+            <p>Shows us the staged and unstaged changes in our code.</p>
+            <img src="img/git_status.png" width="700" />
+          </section>
+
+          <section>
+            <h2>git add filename.txt</h2>
+            <p>Stages changes from a file so that they can be committed.</p>
+            <img src="img/git_add.png" width="700" />
+          </section>
+
+          <section>
+            <h2>git commit -m "Add a first file!"</h2>
+            <p>Takes all the staged changes and records them.</p>
+            <img src="img/git_commit.png" width="600" />
+          </section>
+
+          <section>
+            <h2>git log</h2>
+            <p>Shows a list of all the commits.</p>
+            <img src="img/git_log.png" width="700" />
+          </section>
+
+          <section>
+            <h2>git remote add origin git@github.com:mcelaney/railsbridge.git</h2>
+            <p>Adds a remote repository to send code to</p>
+            <img src="img/git_remote.png" width="700" />
+          </section>
+
+          <section>
+            <h2>git push origin master</h2>
+            <p>Pushes code to a remote repository</p>
+            <img src="img/git_push.png" width="700" />
+          </section>
+        </section>
+        
+        <section>
+          <h2>The End</h2>
+        </section>
+      </div>
+
+      <!-- The navigational controls UI -->
+      <aside class="controls">
+        <a class="left" href="#">&#x25C4;</a>
+        <a class="right" href="#">&#x25BA;</a>
+        <a class="up" href="#">&#x25B2;</a>
+        <a class="down" href="#">&#x25BC;</a>
+      </aside>
+
+      <!-- Displays presentation progress, max value changes via JS to reflect # of slides -->
+      <div class="progress"><span></span></div>
+      
+    </div>
+
+    <!-- Optional libraries for code syntax highlighting and classList support in IE9 -->
+    <script src="lib/js/head.min.js"></script>
+
+    <script>
+      // Load the main reveal.js script
+      head.js( 'js/reveal.js', function() {
+        // Parse the query string into a key/value object
+        var query = {};
+
+        location.search.replace( /[A-Z0-9]+?=(\w*)/gi, function(a) {
+          query[ a.split( '=' ).shift() ] = a.split( '=' ).pop();
+        } );
+
+        // Fires when a slide with data-state=customevent is activated
+        Reveal.addEventListener( 'customevent', function() {
+          console.log( '"customevent" has fired' );
+        } );
+
+        // Fires each time a new slide is activated
+        Reveal.addEventListener( 'slidechanged', function( event ) {
+          // event.previousSlide, event.currentSlide, event.indexh, event.indexv
+        } );
+
+        // Full list of configuration options available here:
+        // https://github.com/hakimel/reveal.js#configuration
+        Reveal.initialize({
+          controls: true,
+          progress: true,
+          history: true,
+          
+          theme: query.theme || 'default', // default/neon/beige
+          transition: query.transition || 'default' // default/cube/page/concave/linear(2d)
+        });
+      } );
+      
+      // Load third party scripts
+      head.js( 'lib/js/classList.js' );
+      head.js( 'lib/js/highlight.js', function() {
+        // Fire off syntax highlighting for potential code samples in the slides
+        hljs.initHighlightingOnLoad();
+      } );
+
+      // If we're runnning the notes server we need to include some additional JS
+      // TODO Is there a better way to determine if we're running the notes server?
+      if( window.location.host === 'localhost:1947' ) {
+        head.js( 'socket.io/socket.io.js', 'plugin/speakernotes/client.js' );
+      }
+    </script>
+    
+  </body>
+</html>
